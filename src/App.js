@@ -11,22 +11,21 @@ const App = () => {
     [
       {
         id:uuidv4(),
-        texto:'Lavarme las patas',
+        texto:'Colgar la ropa',
         completada: false
       },
       {
         id:uuidv4(),
-        texto:'Lavarme las bolas',
-        completada: false
+        texto:'Sacar a pasear al perro',
+        completada: true
       }
     ]
   );
-  console.log(tareas);
   return (
     <div className='contenedor'>
       <Header />
       <FormularioTareas tareas={tareas} cambiarTareas={cambiarTareas}/>
-      <ListaTareas tareas={tareas} />
+      <ListaTareas tareas={tareas} cambiarTareas={cambiarTareas}/>
     </div>
   );
 }
