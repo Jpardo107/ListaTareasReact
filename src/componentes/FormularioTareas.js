@@ -22,6 +22,7 @@ const FormularioTareas = ({tareas, cambiarTareas}) => {
         }
       ]
     )
+    cambiarInputTarea('')
   }
   return ( 
     <form action="" className='formulario-tareas' onSubmit={handleSubmit}>
